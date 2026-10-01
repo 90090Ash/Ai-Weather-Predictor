@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Weather Predictor</title>
+    
+</head>
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js"></script>
+<body>
+
+<div class="ai-card">
+    <div class="title">🌐 AI Weather Predictor</div>
+    <div class="subtitle">Machine Learning Based Temperature Forecast</div>
+
+    <label>Humidity (%)</label>
+    <input type="number" id="humidity" placeholder="e.g. 65">
+
+    <label>Wind Speed (m/s)</label>
+    <input type="number" id="wind" placeholder="e.g. 5">
+
+    <label>Mean Pressure (hPa)</label>
+    <input type="number" id="pressure" placeholder="e.g. 1012">
+
+    <button id="predictBtn" onclick="predictTemperature()">Predict Temperature</button>
+
+    <!-- AI LOADER -->
+    <div class="loader" id="loader">
+        <div class="ring"></div>
+        <div class="loader-text">AI analyzing atmospheric patterns...</div>
+    </div>
+
+    <div class="result" id="result"></div>
+
+    <div class="footer">
+        AI + Flask + Multi-Model Ensemble
+    </div>
+</div>
+
+
+
+</body>
+</html>
