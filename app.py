@@ -1,5 +1,7 @@
+# pyrefly: ignore [missing-import]
 from flask import Flask, request, jsonify
 import pickle
+# pyrefly: ignore [missing-import]
 import numpy as np
 
 app = Flask(__name__)
